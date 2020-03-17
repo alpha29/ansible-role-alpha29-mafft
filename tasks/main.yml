@@ -2,9 +2,9 @@
 - name: install (RedHat)
   when:  ansible_os_family == 'RedHat'
   yum:
-    name: https://mafft.cbrc.jp/alignment/software/mafft-7.450-gcc_fc6.x86_64.rpm
+    name: https://mafft.cbrc.jp/alignment/software/mafft-{{ mafft_version }}-gcc_fc6.x86_64.rpm
 
 - name: install (Debian)
   when: ansible_os_family == 'Debian'
   apt:
-    deb: https://mafft.cbrc.jp/alignment/software/mafft_7.450-1_amd64.deb
+    deb: https://mafft.cbrc.jp/alignment/software/mafft_{{ mafft_version }}-1_amd64.deb
