@@ -1,2 +1,2 @@
 ---
-# defaults file for ansible-role-alpha29-mafft
+mafft_version: 7.450
