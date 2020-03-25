@@ -2,6 +2,6 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: "Include ansible-role-alpha29-mafft"
+    - name: "Include role alpha29.mafft"
       include_role:
-        name: "ansible-role-alpha29-mafft"
+        name: "alpha29.mafft"

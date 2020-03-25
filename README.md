@@ -1,5 +1,6 @@
 ansible-role-alpha29-mafft
 =========
+[![Build Status](https://travis-ci.org/alpha29/ansible-role-alpha29-mafft.svg?branch=master)](https://travis-ci.org/alpha29/ansible-role-alpha29-mafft)
 
 Installs [MAFFT](https://mafft.cbrc.jp/alignment/software/).
 
@@ -10,7 +11,7 @@ This role requires root access, so either run it in a playbook with a global `be
 
     - hosts: localhost
       roles:
-        - role: ansible-role-alpha29-mafft
+        - role: alpha29.mafft
           become: yes
 
 Role Variables
@@ -35,7 +36,7 @@ Example Playbook
   vars:
     mafft_version: "7.450"
   roles:
-    - role: ansible-role-alpha29-mafft
+    - role: alpha29.mafft
       become: yes
 ```
 
@@ -43,6 +44,7 @@ Development
 ------------
 ```
 # Setup:
+git clone git@github.com:alpha29/ansible-role-alpha29-mafft.git alpha29.mafft
 python3.7 -m venv env
 source env/bin/activate
 pip install --upgrade pip
