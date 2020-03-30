@@ -87,4 +87,4 @@ MIT
 Author Information
 ------------------
 
-C.J. Brown (cbrown@alpha29.com)
+<info@alpha29.com>
